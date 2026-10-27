@@ -172,8 +172,8 @@ public class RobotContainer {
     // ========================================================================
     m_driverJoystick.button(LogitechExtreme3DConstants.kTriggerButton)
         .whileTrue(m_shooterIntake.moverCommand(
-            0.5,    // ← ★ VELOCIDAD MOTOR IZQUIERDO (shooter/lanzar)
-            -1.0    // ← ★ VELOCIDAD MOTOR DERECHO   (arrastrar pelotas)
+            -1,    // ← ★ VELOCIDAD MOTOR IZQUIERDO (shooter/lanzar)
+            1    // ← ★ VELOCIDAD MOTOR DERECHO   (arrastrar pelotas)
         ));
 
     // ========================================================================
@@ -183,7 +183,7 @@ public class RobotContainer {
     m_driverJoystick.button(LogitechExtreme3DConstants.kBaseButton7)
         .whileTrue(m_shooterIntake.moverCommand(
             -0.5,   // ← ★ VELOCIDAD MOTOR IZQUIERDO (intake/recoger)
-            1.0     // ← ★ VELOCIDAD MOTOR DERECHO   (intake/recoger)
+            -0.3     // ← ★ VELOCIDAD MOTOR DERECHO   (intake/recoger)
         ));
   }
 
